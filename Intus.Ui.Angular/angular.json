@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Intus-Ui-Angular": {
+    "Intus-Angular-Ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Intus-Ui-Angular",
+            "outputPath": "dist/Intus-Angular-Ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Intus-Ui-Angular:build:production"
+              "browserTarget": "Intus-Angular-Ui:build:production"
             },
             "development": {
-              "browserTarget": "Intus-Ui-Angular:build:development"
+              "browserTarget": "Intus-Angular-Ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Intus-Ui-Angular:build"
+            "browserTarget": "Intus-Angular-Ui:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "Intus-Ui-Angular"
+  "defaultProject": "Intus-Angular-Ui"
 }

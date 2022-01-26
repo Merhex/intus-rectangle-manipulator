@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/Intus-Ui-Angular'),
+      dir: require('path').join(__dirname, './coverage/Intus-Angular-Ui'),
       subdir: '.',
       reporters: [
         { type: 'html' },
