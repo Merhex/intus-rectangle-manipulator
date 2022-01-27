@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+header {
+  display: flex;
+
+  align-items: center;
+  background-color: rgb(201, 201, 201);
+  border-bottom: 0.3rem solid rgb(0, 148, 57);
+  padding: 0.5rem;
+}
+
+.header-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  font-family:'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.intus-logo {
+  width: auto;
+  height: 3rem;
+}
+

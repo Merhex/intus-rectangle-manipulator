@@ -1,0 +1,23 @@
+<div class="resize-container" (mouseup)="onMouseUp($event)">
+  <mat-card>
+    <mat-card-title>Resize</mat-card-title>
+    <mat-divider></mat-divider>
+      <mat-card-content #canvas>
+        <svg class="svg-resize" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect #svgRectangle
+            [attr.x]="rectangle.x"
+            [attr.y]="rectangle.y"
+            [attr.width]="rectangle.width"
+            [attr.height]="rectangle.height"
+            style="fill:rgba(102, 207, 255, 0.25);stroke-width:1;stroke:black"
+            (mousedown)="setMouseAction($event, 1)"
+          />
+        </svg>
+    <span>{{rectangle.width / 100 | number:'1.0-2'}} m.</span>
+    <span>{{rectangle.height / 100 | number:'1.0-2'}} m.</span>
+    <span>{{getAreaOfRectangle() / 10000 | number:'1.0-2'}} m3.</span>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-footer>Perimeter: {{ getPerimiterOfRectangle() / 100 | number: '1.0-2' }} m.</mat-card-footer>
+  </mat-card>
+</div>
