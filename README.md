@@ -15,6 +15,8 @@ Provide the source code with readme file.
 ## Execution
 The app features a window that is resizable. Showing it's perimeter, area and side information. The size is represented in meters.
 
+The window is saved when you will stop resizing the window, after a second it will give you the pop-up of a succesful save.
+
 To run the application, use ```ng-serve``` in the Angular directory.
 Without the API running, it will provide basic functionality but will tell you it cannot load/save data.
 
