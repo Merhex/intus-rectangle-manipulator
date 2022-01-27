@@ -17,7 +17,8 @@ Provide the source code with readme file.
 The app features a window that is resizable. Showing it's perimeter, area and side information. The size is represented in meters.
 The window is saved when you will stop resizing the window, after a second it will give you the pop-up of a succesful save.
 
-##### Running steps
+##### Running steps and prerequisites
+You will need Node.js and Angular installed. Also you will need a .NET runtime.
 To run the application, first you will need to download the packages by running ```npm i``` in the Angular directory.
 Afterwards, use the  ```ng-serve``` command in the same directory to run the application.
 Without the API running, it will provide basic functionality but will tell you it cannot load/save data.
